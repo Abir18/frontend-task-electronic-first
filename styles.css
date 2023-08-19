@@ -1,0 +1,288 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+}
+.heading .navbar {
+  color: white;
+}
+.heading .menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.heading .menu .menu-item {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.heading .menu .menu-item a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+.heading .menu .menu-item .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  width: 200px;
+}
+.heading .menu .menu-item .submenu .submenu-item a {
+  padding: 10px 15px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.heading .menu .menu-item .submenu .submenu-item a:hover {
+  background-color: #555;
+}
+.heading .menu .menu-item:hover .submenu {
+  display: block;
+}
+.heading .menu .has-dropdown.active .submenu {
+  display: block;
+}
+
+.menu-nav .navbar {
+  background-color: #2b363e;
+  opacity: 0.8;
+  color: white;
+  width: 800px;
+  padding: 20px;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+.menu-nav .menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.menu-nav .menu .menu-item {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.menu-nav .menu .menu-item a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+.menu-nav .menu .menu-item a:hover {
+  opacity: 1;
+  color: #fff;
+  font-weight: 700;
+}
+.menu-nav .menu .menu-item .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -80%;
+  background: linear-gradient(to right, #2a3e41, #7c6747);
+  height: 500px;
+  width: 800px;
+  margin-top: 50px;
+  border-radius: 40px;
+}
+.menu-nav .menu .menu-item .submenu .submenu-item a {
+  padding: 10px 15px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.menu-nav .menu .menu-item .submenu .submenu-item a:hover {
+  background-color: #555;
+}
+.menu-nav .menu .menu-item:hover .submenu {
+  display: block;
+}
+.menu-nav .menu .has-dropdown.active .submenu {
+  display: block;
+}
+
+.submenu-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #152328;
+  padding: 15px 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.submenu-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 20px;
+  padding: 20px 50px;
+}
+.submenu-content a {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.submenu-content a:hover {
+  background: #647678;
+  border-radius: 40px;
+}
+
+.wrapper {
+  background: url("./images/game.jpg") no-repeat center center;
+  background-size: cover;
+  height: 580px;
+}
+
+/* Styling for the gaming section */
+.gaming-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70vh;
+  color: white;
+}
+.gaming-section .gaming-text {
+  text-align: left;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+}
+.gaming-section .gaming-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.gaming-section .gaming-text p {
+  font-size: 1.2rem;
+}
+
+.trending-game {
+  display: flex;
+  justify-content: space-around;
+  background: #222;
+  color: #fff;
+}
+
+/* Styling for the game cards */
+.game-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+  background: #222;
+}
+.game-cards .game-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.game-cards .game-card img {
+  width: 450px;
+  height: 250px;
+  border-radius: 5px;
+}
+.game-cards .game-card h2 {
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .gaming-section .gaming-text {
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .gaming-section .gaming-text h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  .gaming-section .gaming-text p {
+    font-size: 1rem;
+  }
+  .game-cards {
+    flex-direction: column;
+  }
+  .game-cards .game-card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .game-cards .game-card img {
+    max-width: 80%;
+    height: auto;
+  }
+  .game-cards .game-card h2 {
+    font-size: 1.2rem;
+  }
+}
+.searchBox {
+  position: absolute;
+  top: 65px;
+  left: 1200px;
+  transform: translate(-80%, 20%);
+  margin: 0 auto;
+  background: #2f3640;
+  height: 0;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color: #2f3640;
+}
+
+.searchButton {
+  color: white;
+  position: relative;
+  left: 140px;
+  top: -5px;
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 50%;
+  background: orangered;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  margin: 0 auto;
+  padding: 25px;
+  color: white;
+  font-size: 20px;
+  transition: 0.4s;
+  line-height: 0px;
+  width: 0px;
+}
+
+.crossButton {
+  position: absolute;
+  right: 600px;
+  top: 90px;
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
