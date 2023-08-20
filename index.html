@@ -30,8 +30,8 @@
         </nav>
 
         <div class="icon">
-          <i class="fa-solid fa-user"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-user fa-xl"></i>
+          <i class="fa-solid fa-cart-shopping fa-xl"></i>
         </div>
       </div>
 
@@ -49,20 +49,50 @@
                   <h4>View all</h4>
                 </div>
                 <div class="submenu-content">
-                  <a>Steam</a>
-                  <a>Ubisoft Connect</a>
-                  <a>EA App</a>
-                  <a>Battle.net</a>
-                  <a>Rockstar</a>
-                  <a>GOG.com</a>
-                  <a>Microsoft Store</a>
-                  <a>Epic</a>
+                  <div class="logo-content">
+                    <a
+                      ><img src="images/Steam.png" alt="" /><span
+                        >Steam</span
+                      ></a
+                    >
+                  </div>
+                  <a
+                    ><span><img src="images/ubisoft.png" alt="" /></span>
+                    Ubisoft Connect</a
+                  >
+                  <a
+                    ><span><img src="images/EA.png" alt="" /></span>EA App</a
+                  >
+                  <a
+                    ><span><img src="images/battle.png" alt="" /></span
+                    >Battle.net</a
+                  >
+                  <a
+                    ><span><img src="images/rockstar.png" alt="" /></span
+                    >Rockstar</a
+                  >
+                  <a
+                    ><span><img src="images/gog.png" alt="" /></span>GOG.com</a
+                  >
+                  <a
+                    ><span><img src="images/microsoft-store.png" alt="" /></span
+                    >Microsoft Store</a
+                  >
+                  <a
+                    ><span><img src="images/app.png" alt="" /></span>Epic</a
+                  >
                 </div>
                 <div class="submenu-heading">
                   <h4>Prepaid cards</h4>
                   <h4>View all</h4>
                 </div>
-                <div class="submenu-content">
+                <div class="submenu-content submenu-footer">
+                  <img src="images/Steam.png" alt="" />
+
+                  <img src="images/battle.png" alt="" />
+
+                  <img src="images/gog.png" alt="" />
+
                   <a>Steam Gift Cards</a>
                   <a>IG Gift Cards</a>
                   <a>Blizzard Gift Cards</a>
@@ -103,10 +133,21 @@
         </button>
       </div>
 
-      <span class="crossButton"
-        ><button>
-          <i class="fa-solid fa-xmark fa-2xl"></i></button
-      ></span>
+      <span class="crossButton">
+        <button>
+          <img
+            src="images/icons8-cross-100.png"
+            alt=""
+            style="
+              background-color: transparent;
+              cursor: pointer;
+              height: 30px;
+              width: 30px;
+            "
+          />
+          <!-- <i class="fa-solid fa-xmark fa-2xl"></i> -->
+        </button>
+      </span>
 
       <section class="gaming-section">
         <div class="gaming-text">
@@ -118,21 +159,39 @@
 
     <div class="trending-game">
       <h1>Trending</h1>
-      <button>View All</button>
+      <button class="view-btn">View All</button>
     </div>
 
     <section class="game-cards">
       <div class="game-card">
         <img src="./images/game11.jpg" alt="Game 1" />
-        <h2>Game 1</h2>
+        <div>
+          <button class="promo-btn">-26%</button>
+        </div>
+        <div class="card-info">
+          <h4>Game 1</h4>
+          <h3>19.99$</h3>
+        </div>
       </div>
       <div class="game-card">
         <img src="./images/game1.png" alt="Game 2" />
-        <h2>Game 2</h2>
+        <div>
+          <button class="promo-btn">-23%</button>
+        </div>
+        <div class="card-info">
+          <h4>Game 2</h4>
+          <h3>30.99$</h3>
+        </div>
       </div>
       <div class="game-card">
         <img src="./images/game2.jpg" alt="Game 3" />
-        <h2>Game 3</h2>
+        <div>
+          <button class="promo-btn">-30%</button>
+        </div>
+        <div class="card-info">
+          <h4>Game 3</h4>
+          <h3>34.89$</h3>
+        </div>
       </div>
     </section>
 

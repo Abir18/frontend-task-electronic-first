@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /* Reset some default styling */
 * {
   margin: 0;
@@ -7,7 +8,7 @@
 
 /* Define global styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .heading {
@@ -46,16 +47,6 @@ body {
   left: 0;
   background-color: #333;
   width: 200px;
-}
-.heading .menu .menu-item .submenu .submenu-item a {
-  padding: 10px 15px;
-  display: block;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-.heading .menu .menu-item .submenu .submenu-item a:hover {
-  background-color: #555;
 }
 .heading .menu .menu-item:hover .submenu {
   display: block;
@@ -104,13 +95,13 @@ body {
   top: 100%;
   left: -80%;
   background: linear-gradient(to right, #2a3e41, #7c6747);
-  height: 500px;
+  height: 470px;
   width: 800px;
-  margin-top: 50px;
+  margin-top: 30px;
   border-radius: 40px;
 }
 .menu-nav .menu .menu-item .submenu .submenu-item a {
-  padding: 10px 15px;
+  padding: 5px 15px;
   display: block;
   color: white;
   text-decoration: none;
@@ -132,19 +123,32 @@ body {
   align-items: center;
   background: #152328;
   padding: 15px 20px;
-  margin: 20px;
+  margin: 10px;
   border-radius: 10px;
 }
 
 .submenu-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-size: 20px;
-  padding: 20px 50px;
+  font-size: 16px;
+  padding: 0px 20px;
 }
 .submenu-content a {
   margin: 10px 0;
   cursor: pointer;
+}
+.submenu-content span {
+  margin: 5px;
+}
+.submenu-content img {
+  margin: -20px 0px;
+}
+
+.submenu-footer {
+  margin: 25px 20px;
+}
+.submenu-footer img {
+  margin-left: 35px;
 }
 
 .submenu-content a:hover {
@@ -162,8 +166,6 @@ body {
 .gaming-section {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  height: 70vh;
   color: white;
 }
 .gaming-section .gaming-text {
@@ -182,9 +184,18 @@ body {
 
 .trending-game {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: #222;
   color: #fff;
+  padding: 10px 230px;
+}
+.trending-game .view-btn {
+  padding: 10px 20px;
+  height: 40px;
+  color: #fff;
+  background: #525151;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 
 /* Styling for the game cards */
@@ -196,18 +207,32 @@ body {
   background: #222;
 }
 .game-cards .game-card {
-  background-color: #f5f5f5;
   border-radius: 10px;
+  position: relative;
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .game-cards .game-card img {
   width: 450px;
-  height: 250px;
-  border-radius: 5px;
+  height: 280px;
+  border-radius: 20px;
 }
-.game-cards .game-card h2 {
-  margin-top: 10px;
+.game-cards .game-card .card-info {
+  display: flex;
+  justify-content: space-between;
+  color: #ddd;
+}
+.game-cards .game-card .promo-btn {
+  padding: 10px 20px;
+  background: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  position: absolute;
+  left: 3px;
+  bottom: 35px;
 }
 
 /* Media queries for responsiveness */
@@ -278,6 +303,16 @@ body {
   transition: 0.4s;
   line-height: 0px;
   width: 0px;
+}
+
+.searchInput::-moz-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.searchInput::placeholder {
+  color: #fff;
+  opacity: 0.6;
 }
 
 .crossButton {
