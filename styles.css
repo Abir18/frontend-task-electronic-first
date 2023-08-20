@@ -17,6 +17,17 @@ body {
   color: #fff;
   padding: 10px;
 }
+.heading .logo {
+  padding: 0 10px;
+}
+.heading .logo h2 {
+  color: red;
+  font-size: 32px;
+  line-height: 10px;
+}
+.heading .user-icon i {
+  padding: 30px 15px;
+}
 .heading .navbar {
   color: white;
 }
@@ -55,6 +66,9 @@ body {
   display: block;
 }
 
+.menu-nav {
+  position: relative;
+}
 .menu-nav .navbar {
   background-color: #2b363e;
   opacity: 0.8;
@@ -160,19 +174,30 @@ body {
   background: url("./images/game.jpg") no-repeat center center;
   background-size: cover;
   height: 580px;
+  position: relative;
 }
 
 /* Styling for the gaming section */
 .gaming-section {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  margin: 100px 0;
   color: white;
 }
+.gaming-section .early-access-btn {
+  padding: 15px 45px;
+  background: #1b2430;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 100px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
 .gaming-section .gaming-text {
-  text-align: left;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  max-width: 400px;
+  margin: 0 -250px;
 }
 .gaming-section .gaming-text h1 {
   font-size: 2.5rem;
@@ -180,6 +205,22 @@ body {
 }
 .gaming-section .gaming-text p {
   font-size: 1.2rem;
+}
+.gaming-section .gaming-text .offer-btn {
+  height: 35px;
+  padding: 5px 15px;
+  background: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  border-start-end-radius: 180px 480px;
+  border-radius: 10px 25px 5px 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.gaming-section .gaming-text .offer-price {
+  font-size: 30px;
+  margin-left: 80px;
 }
 
 .trending-game {
@@ -223,11 +264,14 @@ body {
   color: #ddd;
 }
 .game-cards .game-card .promo-btn {
-  padding: 10px 20px;
+  height: 35px;
+  padding: 5px 15px;
   background: orangered;
   color: #fff;
   border: none;
   border-radius: 10px;
+  border-start-end-radius: 180px 480px;
+  border-radius: 10px 25px 5px 10px;
   font-weight: 700;
   font-size: 18px;
   position: absolute;
@@ -266,7 +310,7 @@ body {
 }
 .searchBox {
   position: absolute;
-  top: 65px;
+  top: 10px;
   left: 1200px;
   transform: translate(-80%, 20%);
   margin: 0 auto;
@@ -286,6 +330,7 @@ body {
   top: -5px;
   width: 75px;
   height: 75px;
+  cursor: pointer;
   border: none;
   border-radius: 50%;
   background: orangered;
@@ -317,7 +362,13 @@ body {
 
 .crossButton {
   position: absolute;
-  right: 600px;
-  top: 90px;
+  right: 590px;
+  top: 110px;
   display: none;
+}
+.crossButton img {
+  background-color: transparent;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
 }/*# sourceMappingURL=styles.css.map */

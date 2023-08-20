@@ -20,8 +20,20 @@ body {
   color: #fff;
   padding: 10px;
 
+  .logo {
+    padding: 0 10px;
+    h2 {
+      color: red;
+      font-size: 32px;
+      line-height: 10px;
+    }
+  }
+
+  .user-icon i {
+    padding: 30px 15px;
+  }
+
   .navbar {
-    // background-color: #333;
     color: white;
   }
 
@@ -44,10 +56,6 @@ body {
         padding: 10px 20px;
         display: block;
         transition: background-color 0.3s ease;
-
-        // &:hover {
-        //   //   background-color: #555;
-        // }
       }
 
       .submenu {
@@ -57,27 +65,11 @@ body {
         left: 0;
         background-color: #333;
         width: 200px;
-
-        // .submenu-item {
-        //   a {
-        //     padding: 10px 15px;
-        //     display: block;
-        //     color: white;
-        //     text-decoration: none;
-        //     transition: background-color 0.3s ease;
-
-        //     &:hover {
-        //       background-color: #555;
-        //     }
-        //   }
-        // }
       }
 
       &:hover {
         .submenu {
           display: block;
-          //   height: 500px;
-          //   width: 500px;
         }
       }
     }
@@ -85,16 +77,13 @@ body {
     .has-dropdown.active {
       .submenu {
         display: block;
-        // height: 500px;
-        // width: 500px;
-        //   margin-top: 20px;
-        //   margin-left: 200px;
       }
     }
   }
 }
 
 .menu-nav {
+  position: relative;
   .navbar {
     background-color: #2b363e;
     opacity: 0.8;
@@ -217,36 +206,43 @@ body {
 .submenu-content a:hover {
   background: #647678;
   border-radius: 40px;
-  //   padding: 120px;
-}
-
-.logo-content {
-  //   text-align: center;
-  //   object-position: right top;
 }
 
 .wrapper {
   background: url("./images/game.jpg") no-repeat center center;
   background-size: cover;
   height: 580px;
-  //   border-bottom-right-radius: 250px 100px;
+  position: relative;
 }
 
 /* Styling for the gaming section */
 .gaming-section {
   display: flex;
   align-items: center;
-  //   justify-content: flex-start;
-  //   height: 70vh;
+  justify-content: space-around;
+  margin: 100px 0;
 
   color: white;
 
+  .early-access-btn {
+    padding: 15px 45px;
+    background: #1b2430;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 100px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    // opacity: 0.9;
+  }
+
   .gaming-text {
-    text-align: left;
-    padding: 20px;
-    // margin: 0 250px;
-    background-color: rgba(0, 0, 0, 0.5);
-    max-width: 400px;
+    // text-align: left;
+    // padding: 30px;
+    margin: 0 -250px;
+    // background-color: rgba(0, 0, 0, 0.5);
+    // max-width: 400px;
 
     h1 {
       font-size: 2.5rem;
@@ -255,6 +251,24 @@ body {
 
     p {
       font-size: 1.2rem;
+    }
+
+    .offer-btn {
+      height: 35px;
+      padding: 5px 15px;
+      background: orangered;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      border-start-end-radius: 180px 480px;
+      border-radius: 10px 25px 5px 10px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .offer-price {
+      font-size: 30px;
+      margin-left: 80px;
     }
   }
 }
@@ -304,11 +318,14 @@ body {
     }
 
     .promo-btn {
-      padding: 10px 20px;
+      height: 35px;
+      padding: 5px 15px;
       background: orangered;
       color: #fff;
       border: none;
       border-radius: 10px;
+      border-start-end-radius: 180px 480px;
+      border-radius: 10px 25px 5px 10px;
       font-weight: 700;
       font-size: 18px;
       position: absolute;
@@ -360,33 +377,17 @@ body {
 
 .searchBox {
   position: absolute;
-  top: 65px;
+  top: 10px;
   left: 1200px;
   transform: translate(-80%, 20%);
   margin: 0 auto;
   background: #2f3640;
   height: 0;
-  //   border-radius: 40px;
-  //   padding: 30px 10px;
 }
-
-// .searchBox:hover > .searchInput {
-//   width: 600px;
-//   //   padding: 0px 10px;
-//   text-align: start;
-//   //   margin-bottom: 20px;
-// }
 
 .searchBox:hover > .searchButton {
   background: white;
   color: #2f3640;
-  //   position: absolute;
-  //   top: 20px;
-  //   left: 20px;
-  //   display: flex;
-  //   justify-content: start;
-  //   align-items: center;
-  //   margin-bottom: 20px;
 }
 
 .searchButton {
@@ -397,14 +398,11 @@ body {
   top: -5px;
   width: 75px;
   height: 75px;
-
+  cursor: pointer;
   border: none;
   border-radius: 50%;
   background: orangered;
-  //   background: #de4e10;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
+
   transition: 0.4s;
 }
 
@@ -417,7 +415,6 @@ body {
   padding: 25px;
   color: white;
   font-size: 20px;
-  //   font-weight: 700;
   transition: 0.4s;
   line-height: 0px;
   width: 0px;
@@ -430,7 +427,13 @@ body {
 
 .crossButton {
   position: absolute;
-  right: 600px;
-  top: 90px;
+  right: 590px;
+  top: 110px;
   display: none;
+  img {
+    background-color: transparent;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+  }
 }

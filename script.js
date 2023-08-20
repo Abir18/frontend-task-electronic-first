@@ -9,20 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// .searchBox:hover .menu-nav {
-//     display: none;
-//   }
-
 const searchBox = document.querySelector(".searchBox");
 const searchInput = document.querySelector(".searchInput");
 
 const searchButton = document.querySelector(".searchButton");
 const crossButton = document.querySelector(".crossButton");
 
-const menuNav = document.querySelector(".menu-nav");
+const navbar = document.querySelector(".navbar");
 
 searchButton.addEventListener("click", function () {
-  menuNav.style.display = "none";
+  navbar.style.display = "none";
   searchInput.style.display = "block";
   searchInput.style.width = "600px";
   searchInput.focus();
@@ -39,9 +35,7 @@ crossButton.addEventListener("click", function () {
   searchInput.style.display = "none";
   searchInput.value = "";
 
-  //   searchBox.style.transform = "translate(0, -88%)";
-  //   searchInput.style.transition = "1.4s";
   searchButton.style.display = "block";
-  menuNav.style.display = "block";
+  navbar.style.display = "block";
   crossButton.style.display = "none";
 });
