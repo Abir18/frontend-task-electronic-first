@@ -16,18 +16,44 @@ const searchButton = document.querySelector(".searchButton");
 const crossButton = document.querySelector(".crossButton");
 
 const navbar = document.querySelector(".navbar");
+const gamingSection = document.querySelector(".gaming-section");
 
 searchButton.addEventListener("click", function () {
   navbar.style.display = "none";
   searchInput.style.display = "block";
   searchInput.style.width = "600px";
   searchInput.focus();
-  searchBox.style.transform = "translate(-90%, 0%)";
+  searchBox.style.transform = "translate(-50%, 50%)";
   searchInput.style.transition = "1.4s";
   searchInput.style.background = "#DE4E10";
   searchInput.style.borderRadius = "40px";
   searchButton.style.display = "none";
   crossButton.style.display = "block";
+
+  if (window.matchMedia("(max-width: 576px)").matches) {
+    // navbar.style.background = "red";
+    searchInput.style.width = "300px";
+    // gamingSection.style.marginTop = "100px";
+    searchBox.style.position = "absolute";
+    searchBox.style.left = "180px";
+    crossButton.style.position = "absolute";
+    crossButton.style.left = "310px";
+    crossButton.style.top = "20px";
+    searchButton.style.position = "absolute";
+    searchButton.style.position = "absolute";
+    searchButton.style.left = "-10px";
+    searchButton.style.top = "100px";
+
+    gamingSection.style.position = "absolute";
+    gamingSection.style.top = "220px";
+    gamingSection.style.right = "50px";
+  } else {
+    gamingSection.style.position = "absolute";
+    gamingSection.style.top = "100px";
+    gamingSection.style.right = "820px";
+
+    searchBox.style.transform = "translate(-50%, 50%)";
+  }
 });
 
 crossButton.addEventListener("click", function () {
@@ -38,4 +64,14 @@ crossButton.addEventListener("click", function () {
   searchButton.style.display = "block";
   navbar.style.display = "block";
   crossButton.style.display = "none";
+
+  if (window.matchMedia("(max-width: 576px)").matches) {
+    gamingSection.style.position = "absolute";
+    gamingSection.style.top = "220px";
+    gamingSection.style.right = "50px";
+  } else {
+    gamingSection.style.position = "absolute";
+    gamingSection.style.top = "100px";
+    gamingSection.style.right = "820px";
+  }
 });
