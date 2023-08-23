@@ -236,7 +236,7 @@ body {
   display: none;
 }
 .menu-nav .searchBox .crossButton img {
-  background-color: transparent;
+  background-color: white;
   cursor: pointer;
   height: 30px;
   width: 30px;
@@ -379,6 +379,7 @@ body {
     max-width: 380px;
     min-height: 600px;
     margin: 0 57px;
+    font-weight: 900;
   }
   .menu-item a {
     padding: 0 10px;
@@ -392,6 +393,14 @@ body {
     position: absolute;
     top: 0;
     left: -510px;
+  }
+  .searchBox .searchInput {
+    position: absolute;
+    left: -150px;
+  }
+  .searchBox .crossButton img {
+    position: absolute;
+    left: -152px;
   }
   .searchBox .searchButton {
     position: absolute;

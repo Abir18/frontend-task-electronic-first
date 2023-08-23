@@ -280,7 +280,7 @@ body {
       right: 590px;
       display: none;
       img {
-        background-color: transparent;
+        background-color: white;
         cursor: pointer;
         height: 30px;
         width: 30px;
@@ -454,6 +454,7 @@ body {
       max-width: 380px;
       min-height: 600px;
       margin: 0 57px;
+      font-weight: 900;
     }
   }
   .menu-item {
@@ -472,6 +473,18 @@ body {
     top: 0;
     left: -510px;
     // transform: translate(70%, 10%);
+
+    .searchInput {
+      position: absolute;
+      //   top: 0;
+      left: -150px;
+    }
+
+    .crossButton img {
+      position: absolute;
+      //   top: 5px;
+      left: -152px;
+    }
 
     .searchButton {
       position: absolute;
